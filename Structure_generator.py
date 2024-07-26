@@ -24,7 +24,7 @@ def save_tree_structure():
     )
 
     if save_file:
-        with open(save_file, 'w') as file:
+        with open(save_file, 'w',encoding ='utf-8') as file:
             file.write(tree_structure)
         messagebox.showinfo("Success", f"Tree structure saved to {save_file}")
 
